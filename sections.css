@@ -1,0 +1,18 @@
+.xjtlu-section-hidden{display:none!important}
+#xjtlu-section-selector{background:#155eef;color:white;border:1px solid #0b3fa8;border-left:4px solid #0b3fa8;border-radius:8px;padding:16px 18px;margin:0 0 20px;font:14px/1.5 system-ui,sans-serif}
+#xjtlu-section-selector .xjtlu-section-heading{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+#xjtlu-section-selector strong{margin-right:auto;font-size:16px}
+#xjtlu-section-selector .xjtlu-section-actions{display:flex;gap:10px;margin-left:auto}
+#xjtlu-section-selector button{border:1px solid #155eef;border-radius:5px;padding:6px 12px;background:white;color:#155eef;font:inherit;font-weight:700;cursor:pointer}
+#xjtlu-section-selector button:disabled{opacity:.55;cursor:wait}
+#xjtlu-section-selector details{margin-top:12px}
+#xjtlu-section-selector summary{cursor:pointer;font-weight:600}
+#xjtlu-section-selector .xjtlu-section-choices{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:8px 18px;max-height:340px;overflow:auto;padding:12px 0}
+#xjtlu-section-selector label{display:flex;align-items:flex-start;gap:8px;margin:0;cursor:pointer}
+#xjtlu-section-selector input{accent-color:#0b3fa8;margin-top:4px;flex-shrink:0}
+#xjtlu-section-selector p{margin:10px 0 0;color:#e0eaff;font-size:12px}
+#xjtlu-section-selector :focus-visible{outline:3px solid white;outline-offset:3px}
+
+#xjtlu-section-selector .xjtlu-assistant-badge{display:inline-block;vertical-align:middle;margin-left:10px;padding:2px 7px;border:1px solid #83b0ff;border-radius:4px;background:#0b4dcc;color:white;font:600 11px/1.5 system-ui,sans-serif;white-space:nowrap}
+
+#xjtlu-section-selector button:hover{background:#eff4ff}

@@ -1,0 +1,39 @@
+.xjtlu-tools-panel{background:#155eef;color:white;border:1px solid #0b3fa8;border-left:4px solid #0b3fa8;border-radius:8px;padding:16px 18px;margin:0 0 20px;font:14px/1.5 system-ui,sans-serif;display:flex;flex-direction:column;gap:12px}
+.xjtlu-tools-panel .xjtlu-tools-heading{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.xjtlu-tools-panel .xjtlu-tools-title{margin-right:auto;font-size:16px;font-weight:700}
+.xjtlu-tools-panel .xjtlu-tools-count{color:#e0eaff}
+.xjtlu-tools-panel .xjtlu-tool-button,.xjtlu-tools-panel .xjtlu-tool-select{border:1px solid #155eef;border-radius:5px;padding:6px 12px;background:white;color:#155eef;font:inherit;max-width:100%;box-sizing:border-box}
+.xjtlu-tools-panel .xjtlu-tool-button{cursor:pointer;font-weight:700}
+.xjtlu-tools-panel .xjtlu-tool-select{min-width:min(320px,100%);flex:0 1 420px}
+.xjtlu-tools-panel .xjtlu-tool-button:hover{background:#eff4ff}
+.xjtlu-tools-panel .xjtlu-tool-button:disabled{opacity:.55;cursor:wait}
+.xjtlu-tools-panel :focus-visible{outline:3px solid white;outline-offset:3px}
+@media(max-width:650px){.xjtlu-tools-panel .xjtlu-tools-title{flex-basis:100%}.xjtlu-tools-panel .xjtlu-tool-select{flex-basis:100%;width:100%}}
+
+.xjtlu-quiz-dialog{width:min(560px,calc(100% - 32px));max-height:90vh;overflow:auto;padding:24px;border:1px solid #b2ccff;border-radius:12px;color:#182a41;background:white;font:14px/1.5 system-ui,sans-serif;box-shadow:0 16px 60px #0003}
+.xjtlu-quiz-dialog::backdrop{background:#102a5688}
+.xjtlu-quiz-dialog h2{font-size:21px;margin:0 0 8px}
+.xjtlu-quiz-dialog p{margin:8px 0 20px}
+.xjtlu-quiz-dialog .xjtlu-range-fields{display:flex;flex-wrap:wrap;gap:16px}
+.xjtlu-quiz-dialog label{flex:1 1 130px;font-weight:600}
+.xjtlu-quiz-dialog input{display:block;width:100%;margin-top:6px;padding:9px;border:1px solid #8da9d5;border-radius:5px;font:inherit;color:inherit;background:white;box-sizing:border-box}
+.xjtlu-quiz-dialog .xjtlu-range-footer{display:flex;justify-content:flex-end;gap:10px}
+.xjtlu-quiz-dialog button{padding:8px 14px;border:1px solid #155eef;border-radius:5px;background:white;color:#155eef;font:inherit;font-weight:700;cursor:pointer}
+.xjtlu-quiz-dialog button[type=submit]{background:#155eef;color:white}
+.xjtlu-quiz-dialog :disabled{opacity:.55;cursor:wait}
+.xjtlu-quiz-dialog :focus-visible{outline:3px solid #155eef;outline-offset:2px}
+.xjtlu-quiz-dialog .xjtlu-range-error{color:#a51d25}
+
+.xjtlu-headings-dialog{width:min(900px,calc(100% - 32px))}
+.xjtlu-heading-rows{display:grid;gap:16px;margin:20px 0}
+.xjtlu-heading-row{display:grid;grid-template-columns:130px 130px minmax(180px,1fr) auto;gap:12px;align-items:end;padding:16px 0;border-top:1px solid #d1e0fa}
+.xjtlu-heading-add{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+@media(max-width:650px){.xjtlu-heading-row{grid-template-columns:1fr 1fr}.xjtlu-heading-row label:nth-child(3){grid-column:1/-1}}
+
+.xjtlu-tools-panel .xjtlu-assistant-badge{display:inline-block;vertical-align:middle;margin-left:10px;padding:2px 7px;border:1px solid #83b0ff;border-radius:4px;background:#0b4dcc;color:white;font:600 11px/1.5 system-ui,sans-serif;white-space:nowrap}
+
+#tm-quiz-report-tools-banner summary{cursor:pointer;font-weight:600}
+#tm-quiz-report-tools-banner .xjtlu-report-choices{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:8px 18px;max-height:340px;overflow:auto;padding:12px 0}
+#tm-quiz-report-tools-banner .xjtlu-report-question{display:flex;align-items:flex-start;gap:8px;margin:0;cursor:pointer;color:inherit}
+#tm-quiz-report-tools-banner input{accent-color:#0b3fa8;margin-top:4px;flex-shrink:0}
+#tm-quiz-report-tools-banner .xjtlu-report-status{margin:0;color:#e0eaff;font-size:12px}

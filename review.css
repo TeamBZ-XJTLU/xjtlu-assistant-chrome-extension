@@ -1,0 +1,6 @@
+.xjtlu-review-hidden{display:none!important}
+.xjtlu-review-masked pre,.xjtlu-review-masked code{white-space:normal!important}
+.xjtlu-review-masked .subquestion{display:inline-block;margin:4px 8px 4px 0}
+#xjtlu-review-tools{position:fixed;right:max(20px,env(safe-area-inset-right));bottom:calc(80px + env(safe-area-inset-bottom));z-index:1000;max-width:calc(100vw - 40px);padding:12px 18px;border:1px solid #0b3fa8;border-radius:24px;background:#155eef;color:white;box-shadow:0 4px 14px #102a5633;font:600 14px/1.5 system-ui,sans-serif;cursor:pointer}
+#xjtlu-review-tools:hover{background:#0b4dcc}
+#xjtlu-review-tools:focus-visible{outline:3px solid #155eef;outline-offset:3px}

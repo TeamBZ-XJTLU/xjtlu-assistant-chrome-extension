@@ -1,0 +1,6 @@
+.xjtlu-grade-hidden{display:none!important}
+#xjtlu-grade-selector summary{cursor:pointer;font-weight:600}
+#xjtlu-grade-selector .xjtlu-grade-choices{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:8px 18px;max-height:340px;overflow:auto;padding:12px 0}
+#xjtlu-grade-selector label{display:flex;align-items:flex-start;gap:8px;margin:0;cursor:pointer;color:inherit}
+#xjtlu-grade-selector input{accent-color:#0b3fa8;margin-top:4px;flex-shrink:0}
+#xjtlu-grade-selector p{margin:0;color:#e0eaff;font-size:12px}

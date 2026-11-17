@@ -1,0 +1,104 @@
+{
+  "manifest_version": 3,
+  "name": "XJTLU Assistant",
+  "version": "1.4.0",
+  "description": "Course section controls, staff quiz tools, and AMS attendance helpers for XJTLU.",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "XJTLU Assistant"
+  },
+  "options_page": "settings.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.xjtlu.edu.cn/mod/quiz/review.php*"
+      ],
+      "js": [
+        "defaults.js",
+        "review.js",
+        "floating.js"
+      ],
+      "css": [
+        "quiz.css",
+        "review.css",
+        "floating.css"
+      ],
+      "run_at": "document_end"
+    },
+    {
+      "matches": [
+        "https://*.xjtlu.edu.cn/mod/quiz/edit.php*",
+        "https://*.xjtlu.edu.cn/mod/quiz/report.php*",
+        "https://*.xjtlu.edu.cn/course/view.php*"
+      ],
+      "js": [
+        "defaults.js",
+        "staff.js",
+        "floating.js"
+      ],
+      "run_at": "document_idle",
+      "css": [
+        "quiz.css",
+        "floating.css"
+      ]
+    },
+    {
+      "matches": [
+        "https://*.xjtlu.edu.cn/course/view.php*"
+      ],
+      "js": [
+        "defaults.js",
+        "sections.js",
+        "floating.js"
+      ],
+      "css": [
+        "sections.css",
+        "floating.css"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://*.xjtlu.edu.cn/grade/report/grader/index.php*"
+      ],
+      "js": [
+        "defaults.js",
+        "grades.js",
+        "floating.js"
+      ],
+      "css": [
+        "quiz.css",
+        "grades.css",
+        "floating.css"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://ams.xjtlu.edu.cn/pc/*"
+      ],
+      "js": [
+        "ams.js",
+        "floating.js"
+      ],
+      "css": [
+        "ams.css",
+        "floating.css"
+      ],
+      "world": "MAIN",
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://ams.xjtlu.edu.cn/pc/*"
+      ],
+      "js": [
+        "ams-settings.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
